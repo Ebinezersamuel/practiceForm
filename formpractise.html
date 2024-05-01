@@ -1,0 +1,54 @@
+<html>
+<script src="formjavascript.js"></script>
+
+<body>
+
+      <h5 style="background-color:rgb(216, 194, 194)">
+            <title>bio info</title>
+            <center>
+                  <h1><u>Bio information</u></h1>
+            </center>
+
+            <form id="myForm">
+                  <h5>
+                        <!-- style sheet to be need to updated with more attractive good looking form -->
+                        <link rel="stylesheet" href="formstyle.css">
+                        <label for="fname" id="finame">&nbsp First name:</label>
+                        <input type="text" id="txtfname"><br></br>
+                        <label for="mname">Midlename:</label>
+                        <input type="text" name="txtusername" id="txtmname" value=""><br><br>
+                        <label for="lname"> &nbsp last name:</label>
+                        <input type="text" name="txtusername" id="txtlname" value=""><br>
+                        <br> <label>gender:</label>
+                        <input type="radio" id="gender" name="gender" value="male">
+                        <label>&nbspmale</label>
+                        <input type="radio" id="gender" name="gender" value="female">
+                        <label>female</label><br><br>
+                        <label>Phnumber:</label>
+                        <input type="tel" id="number"><br><br>
+                        <label for="fod">Food:</label>
+
+                        <select id="food" name="food">
+                              <option value="ice-cream">Ice-cream</option>
+                              <option value="pizza">Pizza</option>
+                              <option value="kfc">KFC</option>
+                              <option value="biryani">Biryani</option>
+                        </select><br><br>
+                        <label for="drinks">Drinks</label><br>
+                        <input type="checkbox" id="coffe" value="coffee">
+                        <label>coffee</label><br>
+                        <input type="checkbox" id="pepsi" value="pepsi">
+                        <label>pepsi</label><br>
+                        <input type="checkbox" id="coco" value="coco-coala">
+                        <label>coco-coala</label><br>
+                        <input type="checkbox" id="sting" value="sting">
+                        <label>sting</label>
+                        <br><label for="pwd">Hidden secret:</label>
+                        <input type="password" id="pwd" name="pwd"><br><br>
+                        <button type="button" onclick="formSubmit()">submit</button>
+                        <button type="reset">reset</button>
+            </form>
+
+</body>
+
+</html>
