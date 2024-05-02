@@ -13,15 +13,22 @@ function formSubmit() {
     console.log(phnum);
     let foodItem = form.food.value;
     console.log(foodItem);
-    //checkbox need to be updated since it's not working properly
-    let cof = form.coffe.value;
-    console.log(cof);
-    let pep = form.pepsi.value;
-    console.log(pep);
-    let coala = form.coco.value;
-    console.log(coala);
-    let senergy = form.sting.value;
-    console.log(senergy);
+   getvalue();
     let text = form.pwd.value;
     console.log(text);
 }
+function getvalue()
+{
+    let checkBoxes=document.getElementsByName('checking');
+    console.log(checkBoxes);
+    let result="";
+    for(let i=0;i<checkBoxes.length;i++)  
+    {
+        
+        if(checkBoxes[i].checked)
+        {
+            result+=checkBoxes[i].value+",";
+        }
+    }
+    console.log("You have selected :"+result);
+    }
