@@ -2,53 +2,65 @@
 <script src="formjavascript.js"></script>
 
 <body>
+      <title>BIO INFO</title>
+      <center>
+            <h1><u><i>Bio information</i></u></h1>
+      </center>
 
-      <h5 style="background-color:rgb(216, 194, 194)">
-            <title>bio info</title>
-            <center>
-                  <h1><u>Bio information</u></h1>
-            </center>
+      <form id="myForm">
+            <h5>
+                  <!-- style sheet to be need to updated with more attractive good looking form -->
+                  <link rel="stylesheet" href="formstyle.css">
+                  <label for="fname" id="finame">&nbsp First name:</label>
+                  <input type="text" id="txtfname"><br></br>
+                  <label for="mname">Midlename:</label>
+                  <input type="text" name="txtusername" id="txtmname" value=""><br><br>
+                  <label for="lname"> &nbsp last name:</label>
+                  <input type="text" name="txtusername" id="txtlname" value=""><br>
+                  <br> <label id="g">Gender:</label>
+                  <input type="radio" id="gender" name="gender" value="male">
+                  <label>&nbspmale</label>
+                  <input type="radio" id="gender" name="gender" value="female">
+                  <label>female</label><br><br>
+                  <label>Phnumber:</label>
+                  <input type="tel" id="number"><br><br>
+                  <label for="fod">Food:</label>
 
-            <form id="myForm">
-                  <h5>
-                        <!-- style sheet to be need to updated with more attractive good looking form -->
-                        <link rel="stylesheet" href="formstyle.css">
-                        <label for="fname" id="finame">&nbsp First name:</label>
-                        <input type="text" id="txtfname"><br></br>
-                        <label for="mname">Midlename:</label>
-                        <input type="text" name="txtusername" id="txtmname" value=""><br><br>
-                        <label for="lname"> &nbsp last name:</label>
-                        <input type="text" name="txtusername" id="txtlname" value=""><br>
-                        <br> <label>gender:</label>
-                        <input type="radio" id="gender" name="gender" value="male">
-                        <label>&nbspmale</label>
-                        <input type="radio" id="gender" name="gender" value="female">
-                        <label>female</label><br><br>
-                        <label>Phnumber:</label>
-                        <input type="tel" id="number"><br><br>
-                        <label for="fod">Food:</label>
+                  <select id="food" name="food">
+                        <option value="ice-cream">Ice-cream</option>
+                        <option value="pizza">Pizza</option>
+                        <option value="kfc">KFC</option>
+                        <option value="biryani">Biryani</option>
+                  </select><br><br>
 
-                        <select id="food" name="food">
-                              <option value="ice-cream">Ice-cream</option>
-                              <option value="pizza">Pizza</option>
-                              <option value="kfc">KFC</option>
-                              <option value="biryani">Biryani</option>
-                        </select><br><br>
-                        <label for="drinks">Drinks</label><br>
-                        <input type="checkbox" name="checking" value="coffee">
-                        <label>coffee</label><br>
-                        <input type="checkbox" name="checking" value="pepsi">
-                        <label>pepsi</label><br>
-                        <input type="checkbox" name="checking" value="coco-coala">
-                        <label>coco-coala</label><br>
-                        <input type="checkbox" name="checking" value="sting">
-                        <label>sting</label>
-                        <br><label for="pwd">Hidden secret:</label>
-                        <input type="password" id="pwd" name="pwd"><br><br>
-                        <button type="button" onclick="formSubmit()">submit</button>
-                        <button type="reset">reset</button>
-            </form>
+                  <label for="drinks" id="nightcaps">Drinks:</label><br>
 
-</body>
+                  <input type="checkbox" class="checkboxes" name="checking" value="coffee">
+                  <label>coffee</label><br>
+                  <input type="checkbox" class="checkboxes" name="checking" value="pepsi">
+                  <label>pepsi</label><br>
+                  <input type="checkbox" class="checkboxes" name="checking" value="coco-coala">
+                  <label>coala</label><br>
+                  <input type="checkbox" class="checkboxes" name="checking" value="sting">
+                  <label>sting</label>
+
+
+
+                  <br><br> <label for="pwd" id="pass">Hidden secret:</label>
+                  <input type="password" id="pwd" name="pwd"><br><br>
+                  <button type="button" onclick="formSubmit()">submit</button>
+                  <button type="reset">reset</button>
+                  <h2><b><u>
+                                    <center>The Result Are</center>
+                              </u></b></h2>
+      </form>
+
+      <div id="first"> </div>
+      <div id="gendertag"></div>
+      <div id="telno"></div>
+      <div id="foodings"></div>
+      <div id="juice"></div>
+      <div id="hide"></div>
+      < </body>
 
 </html>
